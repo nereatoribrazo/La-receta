@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.titulo{
+
+    background-color: rgba(39, 116, 151, 0.737);
+    color: rgb(255, 255, 255);
+    font-family:"Londrina Shadow", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    max-width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 50px;
+    letter-spacing:10px;
+    border-radius: 12px;
+    
+    
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(176, 184, 181, 0.417);
+    
+}
+.menu{
+    list-style: none;
+    text-align: center;
+    background-color: rgb(136, 221, 243);
+    padding: 30px;
+    border-radius: 15px;
+}
+.menu li{
+    display: inline-block;
+}
+
+nav li a {
+    background-color: white;
+    color: #33cea8;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid #529994;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Londrina Shadow", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+
+
+}
+nav li a:hover {
+    background-color: #2564d0;
+    color: white;
+}
+footer{
+    background-color: rgb(136, 221, 243);
+    padding: 30px;
+    margin-bottom: 20px;
+    font-family:"Lexend", sans-serif
+}
+
+form {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical; /* Permite redimensionar solo en vertical */
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4685d8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #001f45;
+}
+header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 720px) {
+    .titulo {
+        font-size: 48px;
+        padding: 20px;
+        letter-spacing: 3px;
+        max-width: 100%;
+    }
+
+    .menu li {
+        display: block; /* menú vertical */
+        margin: 10px 0;
+    }
+
+    nav li a {
+        font-size: 25px;
+        padding: 8px 12px;
+        display: block;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

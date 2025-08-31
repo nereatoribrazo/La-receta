@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.titulo{
+
+    background-color: rgba(39, 116, 151, 0.737);
+    color: rgb(255, 255, 255);
+    font-family:"Londrina Shadow", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    max-width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 50px;
+    letter-spacing:10px;
+    border-radius: 12px;
+    
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(176, 184, 181, 0.417);
+}
+.receta {
+  display: block;
+  text-decoration: none; 
+  color: inherit; 
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+  object-fit: cover; 
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius:20px;
+}
+
+p {
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+ul {
+  font-size: 20px;
+  font-family:"Lexend", sans-serif;
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+  
+}
+ol{
+  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+}
+header a{
+  text-decoration: none;
+  color: inherit;
+}
+.contenedor{
+    background: white;            
+    max-width: 1000px;            
+    margin: 20px auto;            
+    padding: 20px;                
+    border-radius: 10px;          
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    
+}
+
+.header-receta {
+  display: flex;
+  align-items: center;     
+  justify-content: center; 
+  position: relative;      
+  background: rgb(136, 221, 243);     
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.header-receta h3 {
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+.boton-volver {
+  position: absolute;      
+  left: 10px;              
+  background: rgb(136, 221, 243);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+}
+
+.boton-volver:hover {
+  background: #0056b3;
+}
+h3.pancakes {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 50px;
+  color: rgb(115, 185, 202);
+  font-family:"Londrina Shadow", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+}
+header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 720px) {
+    .titulo {
+        font-size: 36px;
+        padding: 20px;
+        letter-spacing: 3px;
+        max-width: 100%;
+    }
+
+    img {
+        width: 80%; /* ocupa más espacio en móviles */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    p {
+        font-size: 24px;
+        margin: 15px auto;
+    }
+
+    ul, ol {
+        font-size: 18px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .header-receta {
+        flex-direction: row; /* elementos uno debajo del otro */
+    }
+
+    h3.pancakes {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    .boton-volver {
+        position: relative;
+        left: 0;
+        margin-bottom: 10px;
+    }
+}
